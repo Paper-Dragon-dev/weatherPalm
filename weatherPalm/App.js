@@ -5,7 +5,7 @@ import {StyleSheet, Text, View} from 'react-native';
 const App = () => {
   return (
     <View>
-      <Text>This is the weather app</Text>
+      <Text>This is the weather app more coming soon</Text>
     </View>
   );
 };
