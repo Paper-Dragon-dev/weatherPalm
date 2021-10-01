@@ -1,6 +1,5 @@
 import React from 'react';
-import {StyleSheet, TextInput} from 'react-native';
-import SafeAreaView from 'react-native/Libraries/Components/SafeAreaView/SafeAreaView';
+import {StyleSheet, TextInput, SafeAreaView} from 'react-native';
 
 export default function CitySelect({latitude, longitude, handleLatLong}) {
   return (
