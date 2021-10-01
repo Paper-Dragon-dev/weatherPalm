@@ -18,7 +18,7 @@ const App = () => {
   };
 
   return (
-    <View>
+    <View style={styles.container}>
       <CitySelect
         latitude={latitude}
         longitude={longitude}
@@ -29,6 +29,10 @@ const App = () => {
   );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    alignItems: 'center',
+  },
+});
 
 export default App;
