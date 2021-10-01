@@ -1,15 +1,19 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {StyleSheet, TextInput} from 'react-native';
 import SafeAreaView from 'react-native/Libraries/Components/SafeAreaView/SafeAreaView';
 
-export default function CitySelect() {
-  const [city, setCity] = useState('');
+export default function CitySelect({latitude, longitude, handleLatLong}) {
   return (
     <SafeAreaView>
       <TextInput
-        onChangeText={setCity}
-        value={city}
-        placeholder="City For Weather"
+        onChangeText={handleLatLong('latitude')}
+        value={latitude}
+        placeholder="latitude"
+      />
+      <TextInput
+        onChangeText={handleLatLong('longitude')}
+        value={longitude}
+        placeholder="longitude"
       />
     </SafeAreaView>
   );
